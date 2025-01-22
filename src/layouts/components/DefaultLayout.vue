@@ -7,7 +7,6 @@ import newFooter from '@/layouts/components/NavFooter.vue';
 import NavbarThemeSwitcher from '@/layouts/components/NavbarThemeSwitcher.vue';
 import NavbarSearch from '@/layouts/components/NavbarSearch.vue';
 import ChainProfile from '@/layouts/components/ChainProfile.vue';
-import Sponsors from '@/layouts/components/Sponsors.vue';
 
 import { NetworkType, useDashboard } from '@/stores/useDashboard';
 import { useBaseStore, useBlockchain } from '@/stores';
@@ -270,14 +269,6 @@ dayjs();
           >
             Wallet Helper
           </div>
-        </RouterLink>
-        <div class="px-4 text-sm pt-2 text-gray-400 pb-2 uppercase">
-          {{ $t('module.sponsors') }}
-        </div>
-        <Sponsors />
-        <div class="px-4 text-sm pt-2 text-gray-400 pb-2 uppercase">
-          {{ $t('module.links') }}
-        </div>
         <a
           href="https://twitter.com/ping_pub"
           target="_blank"
