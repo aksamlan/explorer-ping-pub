@@ -163,3 +163,171 @@ export const colorVariables = (theme: string) => {
     themePrimaryTextColor: 'rgba(200,230,201,0.87)',
   };
 };
+/// Price Chart config
+export const getMarketPriceChartConfig = (
+  theme: string,
+  categories: string[]
+) => {
+  const { themeSecondaryTextColor, themeBorderColor, themeDisabledTextColor } =
+    colorVariables(theme);
+  return {
+    chart: {
+      redrawOnParentResize: true,
+      width: '100%',
+      parentHeightOffset: 0,
+      toolbar: { show: false },
+    },
+    tooltip: {
+      theme: 'dark',
+      shared: false,
+    },
+    dataLabels: { enabled: false },
+    stroke: {
+      // show: false,
+      curve: 'smooth',
+      width: 1.5,
+    },
+    legend: {
+      position: 'top',
+      horizontalAlign: 'left',
+      labels: { colors: themeSecondaryTextColor },
+      markers: {
+        offsetY: 1,
+        offsetX: -3,
+      },
+      itemMargin: {
+        vertical: 3,
+        horizontal: 10,
+      },
+    },
+    colors: [themeColors(theme).colors.primary],
+    fill: {
+      opacity: 0.5,
+      type: 'gradient',
+    },
+    grid: {
+      show: true,
+      borderColor: themeBorderColor,
+      xaxis: {
+        lines: { show: true },
+      },
+    },
+    yaxis: {
+      labels: {
+        style: { colors: themeDisabledTextColor },
+        formatter: function (value: string) {
+          const pattern = Number(value) > 0.01 ? '0.0[0]a' : '0.00[000]';
+          return numeral(value).format(pattern);
+        },
+      },
+    },
+    xaxis: {
+      type: 'datetime',
+      axisBorder: { show: false },
+      axisTicks: { color: themeBorderColor },
+      crosshairs: {
+        stroke: { color: themeBorderColor },
+      },
+      labels: {
+        style: { colors: themeDisabledTextColor },
+      },
+      categories,
+    },
+  };
+};
+// const donutColors = Array.from({length: 19}, () => (`#${Math.floor(Math.random()*16777215+100000).toString(16)}`))
+const donutColors = ["#bbe81a", "#ff5f0b", "#43ebef", "#1999e5", "#230b2c", "#628be8", "#aa5343", "#c9fa89", "#e88ea8", "#72e4a2", "#38cd87", "#515e13", "#7bf8f5", "#83dd6e", "#e8b203", "#7d11d5", "#3e4927", "#f303e2", "#249493", "#50e5e6", "#11deb2", "#a2f9c7", "#2a7bdc", "#47383a", "#226da4", "#966319", "#1bdf99", "#f3ab0c", "#961f50", "#832efd", "#875287", "#4bebe7", "#1d3d2e", "#9caea4", "#2772f5", "#938bf1", "#6228a5", "#24fea5", "#c9bbc8", "#e27225", "#54bd9f", "#babb2d", "#bcf591", "#803b36", "#124f03"]
+export const getDonutChartConfig = (
+  theme: string,
+  labels: string[]
+) => {
+  const { themeSecondaryTextColor, themePrimaryTextColor } =
+    colorVariables(theme);
+  return {
+    stroke: { width: 0 },
+    labels,
+    colors: donutColors,
+    // colors: [
+    //   donutColors.series1,
+    //   donutColors.series5,
+    //   donutColors.series3,
+    //   donutColors.series2,
+    // ],
+    dataLabels: {
+      enabled: true,
+      formatter: (val: string) => `${parseInt(val, 10)}%`,
+    },
+    legend: {
+      position: 'bottom',
+      markers: { offsetX: -3 },
+      labels: { colors: themeSecondaryTextColor },
+      itemMargin: {
+        vertical: 3,
+        horizontal: 10,
+      },
+    },
+    plotOptions: {
+      pie: {
+        donut: {
+          labels: {
+            show: true,
+            name: {
+              fontSize: '1.5rem',
+            },
+            value: {
+              fontSize: '1.5rem',
+              color: themeSecondaryTextColor,
+              formatter: (val: string) => `${parseInt(val, 10)}`,
+            },
+            total: {
+              show: false,
+              fontSize: '1.5rem',
+              // label: 'Operational',
+              // formatter: () => '31%',
+              color: themePrimaryTextColor,
+            },
+          },
+        },
+      },
+    },
+    responsive: [
+      {
+        breakpoint: 992,
+        options: {
+          chart: {
+            height: 380,
+          },
+          legend: {
+            position: 'bottom',
+          },
+        },
+      },
+      {
+        breakpoint: 576,
+        options: {
+          chart: {
+            height: 320,
+          },
+          plotOptions: {
+            pie: {
+              donut: {
+                labels: {
+                  show: true,
+                  name: {
+                    fontSize: '1rem',
+                  },
+                  value: {
+                    fontSize: '1rem',
+                  },
+                  total: {
+                    fontSize: '1rem',
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
+    ],
+  };
+};
