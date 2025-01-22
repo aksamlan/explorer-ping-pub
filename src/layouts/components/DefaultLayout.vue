@@ -272,10 +272,6 @@ dayjs();
           </div>
         </RouterLink>
         <div class="px-4 text-sm pt-2 text-gray-400 pb-2 uppercase">
-          {{ $t('module.sponsors') }}
-        </div>
-        <Sponsors />
-        <div class="px-4 text-sm pt-2 text-gray-400 pb-2 uppercase">
           {{ $t('module.links') }}
         </div>
         <a
