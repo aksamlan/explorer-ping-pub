@@ -1,6 +1,6 @@
 {
   "chain_name": "tellor",
-  "api": ["https://tellor-api.husonode.xyz"],
+  "api": ["https://tellorlayer.com"],
   "rpc": ["https://tellor-rpc.husonode.xyz"],
   "coin_type": 118,
   "min_tx_fee": 200,
