@@ -1,0 +1,28 @@
+{
+  "chain_name": "Testnet Oro",
+  "api": [
+    "https://kiichain-api.husonode.xyz/",
+    "https://dos.sentry.testnet.v3.kiivalidator.com"
+  ],
+  "rpc": [
+    "https://kiichain-rpc.husonode.xyz/",
+    "https://dos.sentry.testnet.v3.kiivalidator.com:26671"
+  ],
+  "snapshot_provider": "",
+  "sdk_version": "0.45.11",
+  "coin_type": "118",
+  "min_tx_fee": "800",
+  "addr_prefix": "kii",
+  "logo": "/logo-gradient.svg",
+  "alt_logo": "/logo-white.svg",
+  "theme_color": "#161723",
+  "assets": [
+    {
+      "base": "ukii",
+      "symbol": "KII",
+      "exponent": "6",
+      "coingecko_id": "",
+      "logo": ""
+    }
+  ]
+}
