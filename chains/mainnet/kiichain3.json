@@ -1,5 +1,5 @@
 {
-  "chain_name": "Testnet Oro",
+  "chain_name": "TestnetOro",
   "api": [
     "https://kiichain-api.husonode.xyz/",
     "https://dos.sentry.testnet.v3.kiivalidator.com"
