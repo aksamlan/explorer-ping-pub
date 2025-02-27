@@ -13,8 +13,7 @@
   "coin_type": "118",
   "min_tx_fee": "800",
   "addr_prefix": "kii",
-  "logo": "/logo-gradient.svg",
-  "alt_logo": "/logo-white.svg",
+  "logo": "/logos/kichain.png",
   "theme_color": "#161723",
   "assets": [
     {
