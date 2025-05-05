@@ -64,14 +64,7 @@ export const useParamStore = defineStore('paramstore', {
       title: 'Governance Parameters',
       items: [] as Array<any>,
     },
-    appVersion: {
-      title: 'Application Version',
-      items: {},
-    },
-    nodeVersion: {
-      title: 'Node Information',
-      items: {},
-    },
+
   }),
   getters: {
     blockchain() {
