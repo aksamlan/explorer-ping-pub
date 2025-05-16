@@ -7,13 +7,13 @@
   "min_tx_fee": 200,
   "sdk_version": "0.50.9",
   "addr_prefix": "lumera",
-  "logo": "https://testnet.explorer.nodeshub.online/logos/odiseo.png",
+  "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzr-XKPaoquMpoWkm2TqDzTKsIa5lgY8-g1Q&s",
   "assets": [
     {
       "base": "LUME",
       "symbol": "ulume",
       "exponent": 6,
-  "logo": "https://testnet.explorer.nodeshub.online/logos/odiseo.png"
+  "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzr-XKPaoquMpoWkm2TqDzTKsIa5lgY8-g1Q&s"
     }
   ]
 }
