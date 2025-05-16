@@ -6,14 +6,14 @@
   "coin_type": 118,
   "min_tx_fee": 200,
   "sdk_version": "0.50.9",
-  "addr_prefix": "tellor",
+  "addr_prefix": "lumera",
   "logo": "https://testnet.explorer.nodeshub.online/logos/odiseo.png"
   "assets": [
     {
-      "base": "loya",
-      "symbol": "Loya",
+      "base": "LUME",
+      "symbol": "ulume",
       "exponent": 6,
-      "logo": "/logos/tellor.png"
+  "logo": "https://testnet.explorer.nodeshub.online/logos/odiseo.png"
     }
   ]
 }
