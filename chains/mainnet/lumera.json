@@ -1,8 +1,7 @@
 {
-  "chainId": "lumera-testnet-1",
   "chainName": "lumera-testnet",
   "rpc": "https://rpc-lumera.vinjan.xyz",
-  "rest": "https://api-lumera.vinjan.xyz",
+  "api": "https://api-lumera.vinjan.xyz",
   "coin_type": 118,
   "min_tx_fee": 200,
   "sdk_version": "0.50.9",
@@ -13,7 +12,7 @@
       "base": "LUME",
       "symbol": "ulume",
       "exponent": 6,
-  "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzr-XKPaoquMpoWkm2TqDzTKsIa5lgY8-g1Q&s"
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzr-XKPaoquMpoWkm2TqDzTKsIa5lgY8-g1Q&s"
     }
   ]
 }
