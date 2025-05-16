@@ -13,8 +13,8 @@
     "bech32PrefixValAddr": "lumeravaloper",
     "bech32PrefixValPub": "lumeravaloperpub",
     "bech32PrefixConsAddr": "lumeravalcons",
-    "bech32PrefixConsPub": "lumeravalconspub"
-    "logo": "https://testnet.explorer.nodeshub.online/logos/odiseo.png",
+    "bech32PrefixConsPub": "lumeravalconspub",
+    "logo": "https://testnet.explorer.nodeshub.online/logos/odiseo.png"
   },
   "currencies": [
     {
