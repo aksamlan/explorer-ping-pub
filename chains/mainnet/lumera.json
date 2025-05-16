@@ -1,0 +1,52 @@
+{
+  "chainId": "lumera-testnet-1",
+  "chainName": "lumera-testnet",
+  "rpc": "https://rpc-lumera.vinjan.xyz",
+  "rest": "https://api-lumera.vinjan.xyz",
+  "bip44": {
+    "coinType": 118
+  },
+  "coinType": 118,
+  "bech32Config": {
+    "bech32PrefixAccAddr": "lumera",
+    "bech32PrefixAccPub": "lumerapub",
+    "bech32PrefixValAddr": "lumeravaloper",
+    "bech32PrefixValPub": "lumeravaloperpub",
+    "bech32PrefixConsAddr": "lumeravalcons",
+    "bech32PrefixConsPub": "lumeravalconspub"
+    "logo": "https://testnet.explorer.nodeshub.online/logos/odiseo.png",
+  },
+  "currencies": [
+    {
+      "coinDenom": "LUME",
+      "coinMinimalDenom": "ulume",
+      "coinDecimals": 6,
+      "coinGeckoId": "unknown"
+    }
+  ],
+  "feeCurrencies": [
+    {
+      "coinDenom": "LUME",
+      "coinMinimalDenom": "ulume",
+      "coinDecimals": 6,
+      "coinGeckoId": "unknown",
+      "gasPriceStep": {
+        "low": 0.01,
+        "average": 0.025,
+        "high": 0.03
+      }
+    }
+  ],
+  "gasPriceStep": {
+    "low": 0.01,
+    "average": 0.025,
+    "high": 0.03
+  },
+  "stakeCurrency": {
+    "coinDenom": "LUME",
+    "coinMinimalDenom": "ulume",
+    "coinDecimals": 6,
+    "coinGeckoId": "unknown"
+  },
+  "features": []
+}
