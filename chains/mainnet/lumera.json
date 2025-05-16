@@ -7,7 +7,7 @@
   "min_tx_fee": 200,
   "sdk_version": "0.50.9",
   "addr_prefix": "lumera",
-  "logo": "https://testnet.explorer.nodeshub.online/logos/odiseo.png"
+  "logo": "https://testnet.explorer.nodeshub.online/logos/odiseo.png",
   "assets": [
     {
       "base": "LUME",
