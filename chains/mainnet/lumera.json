@@ -3,50 +3,17 @@
   "chainName": "lumera-testnet",
   "rpc": "https://rpc-lumera.vinjan.xyz",
   "rest": "https://api-lumera.vinjan.xyz",
-  "bip44": {
-    "coinType": 118
-  },
-  "coinType": 118,
-  "bech32Config": {
-    "bech32PrefixAccAddr": "lumera",
-    "bech32PrefixAccPub": "lumerapub",
-    "bech32PrefixValAddr": "lumeravaloper",
-    "bech32PrefixValPub": "lumeravaloperpub",
-    "bech32PrefixConsAddr": "lumeravalcons",
-    "bech32PrefixConsPub": "lumeravalconspub",
-    "logo": "https://testnet.explorer.nodeshub.online/logos/odiseo.png"
-  },
-  "currencies": [
+  "coin_type": 118,
+  "min_tx_fee": 200,
+  "sdk_version": "0.50.9",
+  "addr_prefix": "tellor",
+  "logo": "https://testnet.explorer.nodeshub.online/logos/odiseo.png"
+  "assets": [
     {
-      "coinDenom": "LUME",
-      "coinMinimalDenom": "ulume",
-      "coinDecimals": 6,
-      "coinGeckoId": "unknown"
+      "base": "loya",
+      "symbol": "Loya",
+      "exponent": 6,
+      "logo": "/logos/tellor.png"
     }
-  ],
-  "feeCurrencies": [
-    {
-      "coinDenom": "LUME",
-      "coinMinimalDenom": "ulume",
-      "coinDecimals": 6,
-      "coinGeckoId": "unknown",
-      "gasPriceStep": {
-        "low": 0.01,
-        "average": 0.025,
-        "high": 0.03
-      }
-    }
-  ],
-  "gasPriceStep": {
-    "low": 0.01,
-    "average": 0.025,
-    "high": 0.03
-  },
-  "stakeCurrency": {
-    "coinDenom": "LUME",
-    "coinMinimalDenom": "ulume",
-    "coinDecimals": 6,
-    "coinGeckoId": "unknown"
-  },
-  "features": []
+  ]
 }
