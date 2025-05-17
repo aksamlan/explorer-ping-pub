@@ -1,18 +1,17 @@
 {
-  "chainName": "lumera-testnet",
-  "rpc": "https://rpc-lumera.vinjan.xyz",
-  "api": "https://api-lumera.vinjan.xyz",
-  "coin_type": 118,
-  "min_tx_fee": 200,
-  "sdk_version": "0.50.9",
+  "chain_name": "lumera",
+  "api": ["https://api-lumera.vinjan.xyz"],
+  "rpc": ["https://rpc-lumera.vinjan.xyz"],
+  "sdk_version": "v0.50.13",
   "addr_prefix": "lumera",
-  "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzr-XKPaoquMpoWkm2TqDzTKsIa5lgY8-g1Q&s",
+  "min_tx_fee": "0.025",
+  "logo": "/logos/lumera.png",
   "assets": [
     {
-      "base": "LUME",
-      "symbol": "ulume",
+      "symbol": "LUME",
+      "base": "ulume",
       "exponent": 6,
-      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzr-XKPaoquMpoWkm2TqDzTKsIa5lgY8-g1Q&s"
+      "logo": "https://raw.githubusercontent.com/cosmos/chain-registry/master/lumera/images/lumera.png"
     }
   ]
 }
