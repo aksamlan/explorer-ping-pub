@@ -1,0 +1,16 @@
+{
+    "chain_name": "Tacchain",
+    "api": ["https://tacchain-api.husonode.xyz"],
+    "rpc": ["https://tacchain-rpc.husonode.xyz"],
+    "sdk_version": "v0.50.8",
+    "coin_type": "118",
+    "min_tx_fee": "500",
+    "addr_prefix": "tac",
+    "logo": "/logos/tac.png",
+    "assets": [{
+        "base": "utac",
+        "symbol": "TAC",
+        "exponent": "6",
+        "logo": "/logos/tac.png"
+    }]
+}
