@@ -1,5 +1,5 @@
 {
-  "chain_name": "TestnetOro",
+  "chain_name": "KiiChain",
   "api": [
     "https://kiichain-api.husonode.xyz/",
     "https://dos.sentry.testnet.v3.kiivalidator.com"
@@ -17,9 +17,9 @@
   "theme_color": "#161723",
   "assets": [
     {
-      "base": "ukii",
+      "base": "akii",
       "symbol": "KII",
-      "exponent": "6",
+      "exponent": "18",
       "coingecko_id": "",
       "logo": ""
     }
