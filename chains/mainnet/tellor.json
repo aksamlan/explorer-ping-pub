@@ -1,0 +1,25 @@
+{
+  "chain_name": "Tellor-Mainnet",
+  "api": [
+    "https://mainnet.tellorlayer.com",
+  ],
+  "rpc": [
+    "https://mainnet.tellorlayer.com/rpc",
+  ],
+  "snapshot_provider": "",
+  "sdk_version": "0.45.11",
+  "coin_type": "118",
+  "min_tx_fee": "800",
+  "addr_prefix": "loya",
+  "logo": "/logos/tellor.avif",
+  "theme_color": "#161723",
+  "assets": [
+    {
+      "base": "loya",
+      "symbol": "LOYA",
+      "exponent": "6",
+      "coingecko_id": "unknown",
+      "logo": ""
+    }
+  ]
+}
