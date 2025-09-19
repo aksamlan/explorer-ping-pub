@@ -1,52 +1,18 @@
 {
-	"chainId": "tellor-1",
-	"chainName": "Tellor-Mainnet",
-	"rpc": "https://mainnet.tellorlayer.com/rpc",
-	"rest": "https://mainnet.tellorlayer.com",
-	"bip44": {
-		"coinType": 118
-	},
-	"coinType": 118,
-	"bech32Config": {
-		"bech32PrefixAccAddr": "tellor",
-		"bech32PrefixAccPub": "tellorpub",
-		"bech32PrefixValAddr": "tellorvaloper",
-		"bech32PrefixValPub": "tellorvaloperpub",
-		"bech32PrefixConsAddr": "tellorvalcons",
-		"bech32PrefixConsPub": "tellorvalconspub"
-	},
-	"currencies": [
-		{
-			"coinDenom": "LOYA",
-			"coinMinimalDenom": "loya",
-			"coinDecimals": 6,
-			"coinGeckoId": "unknown"
-		}
-	],
-	"feeCurrencies": [
-		{
-			"coinDenom": "LOYA",
-			"coinMinimalDenom": "loya",
-			"coinDecimals": 6,
-			"coinGeckoId": "unknown",
-			"gasPriceStep": {
-				"low": 0.01,
-				"average": 0.025,
-				"high": 0.03
-			}
-		}
-	],
-	"gasPriceStep": {
-		"low": 0.01,
-		"average": 0.025,
-		"high": 0.03
-    "logo": "/logos/tellor.png",
-	},
-	"stakeCurrency": {
-		"coinDenom": "LOYA",
-		"coinMinimalDenom": "loya",
-		"coinDecimals": 6,
-		"coinGeckoId": "unknown"
-	},
-	"features": []
+  "chain_name": "Tellor-Mainnet",
+  "api": ["https://mainnet.tellorlayer.com"],
+  "rpc": ["https://mainnet.tellorlayer.com/rpc"],
+  "coin_type": 118,
+  "min_tx_fee": 0.01,
+  "sdk_version": "v0.50.13",
+  "addr_prefix": "tellor",
+  "logo": "/logos/tellor.png",
+  "assets": [
+    {
+      "base": "loya",
+      "symbol": "LOYA",
+      "exponent": 6,
+      "logo": "/logos/tellor.png"
+    }
+  ]
 }
