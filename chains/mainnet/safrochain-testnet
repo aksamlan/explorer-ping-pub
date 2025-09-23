@@ -1,0 +1,17 @@
+{
+  "chain_name": "Safrochain-Testnet",
+  "api": ["https://rest.testnet.safrochain.com"],
+  "rpc": ["https://rpc.testnet.safrochain.com/"],
+  "sdk_version": "v0.50.13",
+  "addr_prefix": "lumera",
+  "min_tx_fee": "0.025",
+  "logo": "https://explorer.testnet.safrochain.com/assets/logo-83bf4e23.svg",
+  "assets": [
+    {
+      "symbol": "SAF",
+      "base": "usafro",
+      "exponent": 6,
+      "logo": "https://explorer.testnet.safrochain.com/assets/logo-83bf4e23.svg"
+    }
+  ]
+}
